@@ -1,0 +1,94 @@
+@import "../utils/vars";
+
+/* --- FOOTER ---*/
+.footer {
+    background-color: $footer-background;
+    height: 252px;
+    margin: auto;
+    padding: 60px 0 0 0;
+     
+    &__address {
+            font-style: normal;
+            font-size: 14px;
+            line-height: 1.71;
+            color: $no-color;
+            margin-top: 20px;
+            margin-bottom: 9px;
+            width: 246px;
+        }
+    
+        &__logo {
+            font-family: $secondary-font;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.19;
+            letter-spacing: 0.03em;
+            color: $no-color;
+            text-decoration: none;
+        }
+
+        &__contacts,
+        &__email,
+        &__tel {
+            font-size: 14px;
+            line-height: 1.71;
+            color: $footer-contact;
+            text-decoration: none;
+            padding: 0;
+        }
+    
+        &__contacts {
+            flex-direction: column;
+            margin: 0 auto;
+            padding: 0;
+            gap: 9px;
+            list-style: none;
+        }
+    
+        &__icon-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            margin-left: 70px;
+        }
+    
+        &__icon {
+            fill: $no-color;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: $footer-icon-bcg;
+                &:hover,
+                &:focus {
+                    fill: $no-color;
+                    background-color: $button-hover;
+                    cursor: pointer;
+                }
+        }
+    
+        &__media {
+            display: flex;
+            flex-direction: column;
+            color: v$no-color;
+            padding-left: 70px;
+            padding-top: 0;
+        }
+    
+        &__media-title {
+            color: v$no-color;
+            margin: 0 auto;
+        }
+}
+
+.blue-text {
+    color: $button-hover
+}
+.footer-container {
+    flex-direction: row;
+    display: flex;
+    color:  $no-color;
+}
+
+/* --- END OF FOOTER ---*/

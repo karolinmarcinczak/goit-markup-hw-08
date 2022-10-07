@@ -1,0 +1,79 @@
+@import "../utils/vars";
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 94px;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+
+    &__label {
+            font-size: 14px;
+            line-height: 1.14;
+            color: $no-color;
+            text-transform: uppercase;
+        }
+    
+    &__email {
+        margin-top: 20px;
+        padding-top: 15px;
+        padding-left: 16px;
+        width: 358px;
+        height: 50px;
+        border: 1px solid $newsletter-border;
+        border-radius: 4px;
+        resize: none;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.01em;
+        background-color: $footer-background;
+    }   
+}
+
+.signup {
+    margin-left: 12px;
+    margin-bottom: 94;
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 10px;
+
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 50px;
+        width: 200px;
+        border-radius: 4px;
+        border-color: $button-hover;
+        background-color: $button-hover;
+        box-shadow: 0px 4px 4px 0px #00000026;
+        color: $no-color;
+        line-height: 1.87;
+        font-size: 16px;
+        font-family: $main-font;
+        font-style: bold;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+
+        &:hover {
+            transition: $transition;
+        }
+    }
+
+    &__icon {
+        fill: $no-color;
+        margin-left: 25px;
+    }
+}
+ 

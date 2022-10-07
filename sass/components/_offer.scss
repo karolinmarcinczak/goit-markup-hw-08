@@ -1,0 +1,41 @@
+@import "../utils/vars";
+
+.offer {
+    margin-top: $sections-padding-top;
+
+    &__services{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 50px;
+        list-style: none;
+        padding-left: 0;
+    }
+    &__label {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        font-weight: 700;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 27px 0px;
+        color: $no-color;
+        background-color: $offer-color;
+    }
+
+    &__image {
+        position: relative;
+    }
+    &__title {
+        font-family: $main-font;
+        font-style: bold;
+        font-size: 36px;
+        line-height: 1.17;
+        letter-spacing: 3%;
+        text-align: center;
+    }
+}

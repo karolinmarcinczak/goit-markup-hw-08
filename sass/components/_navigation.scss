@@ -1,0 +1,72 @@
+@import "../utils/vars";
+
+.navigation {
+    padding: 0 auto;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 46px;
+        line-height: 1.2;
+        padding: 0;
+        margin-left: 93px;
+        list-style: none;
+    }
+
+    &__link {
+        font-family: $main-font;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: v$main-text-color;
+        text-decoration: none;
+        transition: $transition;
+
+        &:hover,
+        &:focus {
+                color: $button-hover;
+                text-decoration: none;
+                transition: $transition;
+            }
+    }
+
+    &__email,
+    &__tel {
+        font-family: $main-font;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: $light-text-color;
+        text-decoration: none;
+        transition: $transition;
+
+        &:hover,
+        &:focus {
+                color: $button-hover;
+                fill: $button-hover;
+                text-decoration: none;
+            }
+    }
+
+    &__contacts {
+        margin-left: 250px;
+        gap: 50px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__icon {
+        margin-right: 10px;
+        color: $light-text-color;
+        transition: $transition;
+
+        &:hover,
+        &:focus {
+                fill: $button-hover;
+                cursor: pointer;
+            }
+    } 
+}
