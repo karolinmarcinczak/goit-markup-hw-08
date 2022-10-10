@@ -45,6 +45,7 @@
         color: $light-text-color;
         text-decoration: none;
         transition: $transition;
+        display: none;
 
         &:hover,
         &:focus {
