@@ -6,12 +6,16 @@
     &__list {
         display: flex;
         flex-direction: row;
-        gap: 46px;
+        gap: 60px;
         line-height: 1.2;
         padding: 0;
-        margin-left: 93px;
+        margin: 0;
         list-style: none;
     }
+    
+    &__pages {
+             display: none;
+         }
 
     &__link {
         font-family: $main-font;

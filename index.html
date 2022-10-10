@@ -15,20 +15,20 @@
     <title>Studio</title>
   </head>
   <body>
-      <header class="header">
-          <div class="header-wrapper">
+       <header class="header">
+          <div class="header__wrapper">
           <a href="index.html" class="header__logo">
               <span class="blue-text">Web</span>Studio
           </a>
           <nav class="navigation">
           <ul class="navigation__list">
-            <li>
+            <li class="navigation__pages">
               <a class="navigation__link current-page-link" href="index.html">Agencja</a>
             </li>
-            <li>
+            <li class="navigation__pages">
               <a class="navigation__link" href="portfolio.html">Portfolio</a>
             </li>
-            <li>
+            <li class="navigation__pages">
               <a class="navigation__link" href="index.html">Kontakt</a>
             </li>
           </ul>
@@ -50,6 +50,14 @@
                 +48 111 111 111</a>
             </li>
           </ul>
+          </div>
+          <div>
+            <button class="header__mobile js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+              <svg class="header__mobile-menu"  width="24px" height="24px">
+                <use href="./images/icons.svg#icon-menu_24px"></use>
+              </svg>
+
+            </button>
           </div>
       </header>
       <main>

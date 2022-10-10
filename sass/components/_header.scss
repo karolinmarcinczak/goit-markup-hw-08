@@ -1,18 +1,19 @@
 @import "../utils/vars";
 
 .header {
-    background-color: $no-color;
-    height: 80px;
-    width: 1600px;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    gap: 93px;
-    border-bottom: 1px solid #ececec;
-    width: 100%;
-    max-width: 1200px;
-    padding: 0;
-    margin: 0 auto;
+    
+    border-bottom: 1px solid $header-border;
+    
+    .header__wrapper {
+        min-width: 320px;
+        max-width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        padding: 16px 15px 16px 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        }
 
     &__logo {
             font-family: $secondary-font;
@@ -23,10 +24,22 @@
             color: $pureblack;
             text-decoration: none;
         }
+
+    &__mobile {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background-color: transparent;
+        
+            &:hover,
+            &:focus {
+                fill: $button-hover;
+                cursor: pointer;
+            }
+    }
+   
 }
 
-.header-wrapper {
-    display: flex;
-    align-items: center;
-}
+
 

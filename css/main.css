@@ -8,11 +8,34 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding: 0;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 215px;
+    padding-right: 215px;
+  }
+}
 .lorem {
   padding-top: 94px;
 }
@@ -335,12 +358,13 @@ body {
 .title {
   font-family: "Roboto";
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0;
 }
 .title__button {
   background-color: #2196F3;
@@ -359,9 +383,8 @@ body {
 
 .title-background {
   background-color: #2F303A;
-  height: 600px;
-  width: 1600px;
-  padding: 200px 0;
+  min-width: 320px;
+  padding: 118px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,10 +404,11 @@ body {
 }
 
 .picture {
-  width: 1600px;
+  min-width: 320px;
   height: 600px;
   background-position: center;
   background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -393,6 +417,33 @@ body {
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/image-background.png");
 }
 
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .with-picture {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/image-background@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/image-background@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .with-picture {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/image-background.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/image-background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .picture {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/image-background.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/image-background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+  }
+}
 /* --- FOOTER ---*/
 .footer {
   background-color: #2F303A;
