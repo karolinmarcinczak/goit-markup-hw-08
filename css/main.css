@@ -44,10 +44,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
   gap: 30px;
   list-style: none;
   padding-left: 0;
@@ -386,6 +393,7 @@ body {
   cursor: pointer;
   text-align: center;
   padding: 10px 41px 10px 42px;
+  margin-top: 30px;
 }
 
 .title-background {
@@ -408,24 +416,28 @@ body {
           align-items: center;
   text-align: center;
   margin: auto;
-}
-
-.picture {
-  min-width: 320px;
-  height: 600px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/image-background.png");
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/image-background.png");
   background-position: center;
   background-size: cover;
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-.with-picture {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/image-background.png");
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/image-background.png");
+/* .picture {
+    min-width: 320px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
-
+.with-picture {
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+        url('../images/image-background.png');
+} */
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .with-picture {
+  .title-background {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/image-background@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/image-background@2x.jpg);
     background-repeat: no-repeat;
@@ -434,7 +446,7 @@ body {
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .with-picture {
+  .title-background {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/image-background@2x.png);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/image-background@2x.png);
     background-repeat: no-repeat;
@@ -443,12 +455,12 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .picture {
-    background-size: auto;
-  }
   .title-background {
     padding: 200px 0;
     width: 1200px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/image-background@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/image-background@2x.jpg);
+    background-size: auto;
   }
 }
 /* --- FOOTER ---*/
