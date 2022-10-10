@@ -45,7 +45,6 @@
         color: $light-text-color;
         text-decoration: none;
         transition: $transition;
-        display: none;
 
         &:hover,
         &:focus {
@@ -59,7 +58,7 @@
         margin-left: 250px;
         gap: 50px;
         list-style: none;
-        display: flex;
+        display: none;
         flex-direction: row;
     }
 
