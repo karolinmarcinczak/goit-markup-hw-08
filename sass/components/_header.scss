@@ -5,10 +5,9 @@
     border-bottom: 1px solid $header-border;
     
     .header__wrapper {
-        min-width: 320px;
-        max-width: 1200px;
         height: auto;
         margin: 0 auto;
+        max-width: 1200px;
         padding: 16px 15px 16px 15px;
         display: flex;
         flex-direction: row;
