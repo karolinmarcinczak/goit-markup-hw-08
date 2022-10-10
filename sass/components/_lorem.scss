@@ -2,15 +2,16 @@
 
 .lorem {
 padding-top: $sections-padding-top;
+margin: 0 auto;
 
 
 &__descriptions{
-    display: flex;
+    
     list-style: none;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    
+    
     gap: 30px;
     list-style: none;
     padding-left: 0;
