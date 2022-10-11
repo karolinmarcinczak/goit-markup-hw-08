@@ -1,9 +1,18 @@
 @import "../utils/vars";
 
+/*   */
+
+
+@media screen and (min-width: 1200px) {
+
+.mobile-hidden {
+    width: 1200px;
+}
 .offer {
     margin-top: $sections-padding-top;
+    width: 1200px;
 
-    &__services{
+    &__services {
         display: flex;
         flex-direction: row;
         gap: 30px;
@@ -11,6 +20,7 @@
         list-style: none;
         padding-left: 0;
     }
+
     &__label {
         display: block;
         position: absolute;
@@ -30,6 +40,7 @@
     &__image {
         position: relative;
     }
+
     &__title {
         font-family: $main-font;
         font-style: bold;
@@ -38,4 +49,6 @@
         letter-spacing: 3%;
         text-align: center;
     }
+
+}
 }
