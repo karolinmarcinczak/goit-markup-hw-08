@@ -1,21 +1,17 @@
 @import "../utils/vars";
 
 .lorem {
-padding-top: $sections-padding-top;
-margin: 0 auto;
+    min-width: 304px;
+    margin: 0 auto;
+    padding: 0 0 60px 0;
+    margin-top: 60px;
 
 
 &__descriptions{
-    
     list-style: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
     gap: 30px;
-    list-style: none;
-    padding-left: 0;
-
+    margin: 0 15px 0 15px;
+    padding: 0;
 }
 &__icon {
     width: 270px;
@@ -33,15 +29,16 @@ margin: 0 auto;
             fill: $button-hover;
         }
 &__header {
+    display: flex;
     font-family: $main-font;
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.03em;
-    text-align: center;
+    justify-content: center;
     text-transform: uppercase;
-    color: $no-color;
+    color: $pureblack;
     margin: 0;
-
+    
 }
 
 }
@@ -52,4 +49,36 @@ margin: 0 auto;
     color: $light-text-color;
 }
 
+}
+
+
+@media screen and (min-width: 768px) {
+    .lorem {
+        padding: 0 0 45px 0;
+        max-width: 768px;
+        
+        &__descriptions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__chunk {
+            width: 354px;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .lorem {
+        padding: 0;
+        margin-top: $sections-padding-top;
+        max-width: 1200px;
+
+        &__descriptions {
+            flex-wrap: nowrap;
+            list-style: none;
+            margin: 0;
+            gap: 30px;
+
+        }
+}
 }
