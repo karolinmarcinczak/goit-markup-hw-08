@@ -6,6 +6,12 @@ body {
   padding: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -131,7 +137,10 @@ body {
     gap: 30px;
   }
 }
-/*   */
+.mobile-hidden {
+  display: none;
+}
+
 @media screen and (min-width: 1200px) {
   .mobile-hidden {
     width: 1200px;
