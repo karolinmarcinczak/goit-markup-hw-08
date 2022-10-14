@@ -6,16 +6,20 @@
     padding-bottom: 0px;
 
     &__descriptions {
-        margin: 0pxx;
+        margin: 0px;
         width: 100%;
         gap: 30px;
         text-align: center;
         display: flex;
         flex-wrap: wrap;
+        list-style: none;
     }
 
     &__chunk {
         flex-basis: 100%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     &__icon {
@@ -34,13 +38,14 @@
             border: solid $button-hover;
             fill: $button-hover;
     }
+}
 
     &__header {
         font-family: $main-font;
         font-size: 14px;
         line-height: 1.15;
         letter-spacing: 0.03em;
-        
+        text-align: center;
         text-transform: uppercase;
         color: $pureblack;
         margin: 0;
@@ -116,7 +121,7 @@
 }
 */
 
-@media screen and (min-width: 768px) {
+ /*@media screen and (min-width: 768px) {
     .lorem {
         padding: 0 0 45px 0;
         max-width: 768px;
@@ -143,5 +148,5 @@
             margin: 0;
             gap: 30px;
         }
-}
+    }
 }
