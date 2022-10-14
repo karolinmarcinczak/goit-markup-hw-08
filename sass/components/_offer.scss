@@ -1,22 +1,20 @@
 @import "../utils/vars";
 
-.mobile-hidden {
+.offer__services {
     display: none
 } 
 
 
 @media screen and (min-width: 1200px) {
 
-.mobile-hidden {
-    width: 1200px;
-}
 .offer {
     margin-top: $sections-padding-top;
-    width: 1200px;
+    
 
     &__services {
         display: flex;
         flex-direction: row;
+        width: 1200px;
         gap: 30px;
         margin-top: 50px;
         list-style: none;
