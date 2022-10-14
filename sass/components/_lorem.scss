@@ -17,9 +17,6 @@
 
     &__chunk {
         flex-basis: 100%;
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
     }
 
     &__icon {
@@ -32,6 +29,7 @@
         align-items: center;
         justify-content: center;
         transition: $transition;
+        padding: 25px 102px;
     
         &:hover,
         &:focus {
@@ -56,11 +54,50 @@
         font-size: 14px;
         line-height: 1.71;
         color: $light-text-color;
-        margin: 0%;
+        margin: 0;
         margin-bottom: 30px;
+        text-align: left;
         }
 
 }
 
+@media screen and (min-width: 768px) {
+    .lorem {
+        &__descriptions {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
 
+        &__chunk {
+            flex-basis: calc((100% - 30px) / 2);
+    }
+    }
+}
 
+@media screen and (min-width: 1200px) {
+    .lorem {
+        display: flex;
+
+        &__descriptions {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__descriptions {
+            width: 1170px;
+            padding: 0%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__header {
+            text-align: left;
+        }
+    
+        &__text {
+            text-align: left;
+        }
+    }   
+}

@@ -58,12 +58,6 @@ img {
 .lorem__chunk {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .lorem__icon {
   width: 270px;
@@ -82,6 +76,7 @@ img {
           justify-content: center;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 25px 102px;
 }
 .lorem__icon:hover, .lorem__icon:focus {
   border: solid #2196F3;
@@ -102,10 +97,55 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: #757575;
-  margin: 0%;
+  margin: 0;
   margin-bottom: 30px;
+  text-align: left;
 }
 
+@media screen and (min-width: 768px) {
+  .lorem__descriptions {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .lorem__chunk {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .lorem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .lorem__descriptions {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .lorem__descriptions {
+    width: 1170px;
+    padding: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .lorem__header {
+    text-align: left;
+  }
+  .lorem__text {
+    text-align: left;
+  }
+}
 .offer__services {
   display: none;
 }
