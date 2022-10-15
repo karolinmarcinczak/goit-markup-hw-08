@@ -124,6 +124,8 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    list-style: none;
+    gap: 30px;
   }
   .lorem__chunk {
     /* calc((100% - numberOfGapsInRow * valueOfOneGap) / numberOfElementInRow) */
@@ -139,6 +141,9 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0 auto;
+    padding: 0 0 60px 0;
+    margin-top: 60px;
   }
   .lorem__descriptions {
     width: 100%;
@@ -347,10 +352,6 @@ img {
     line-height: 1.17;
     text-align: center;
     margin: 0px 0px 50px 0px;
-  }
-  .team__team-card {
-    left: 215px;
-    top: 1635px;
   }
   .team__team-card {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
@@ -717,8 +718,8 @@ margin: $sections-padding-top 0;
           align-items: center;
   text-align: center;
   margin: auto;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/image-background.png");
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/image-background.png");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/image-background@1x.png");
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/image-background@1x.png");
   background-position: center;
   background-size: cover;
   background-size: 100%;
@@ -737,19 +738,10 @@ margin: $sections-padding-top 0;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
         url('../images/image-background.png');
 } */
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .title-background {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/image-background@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/image-background@2x.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .title-background {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/image-background@2x.png);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/image-background@2x.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
@@ -761,7 +753,7 @@ margin: $sections-padding-top 0;
     width: 1200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/image-background@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/image-background@2x.jpg);
-    background-size: auto;
+    background-size: cover;
   }
 }
 /* --- FOOTER ---*/
