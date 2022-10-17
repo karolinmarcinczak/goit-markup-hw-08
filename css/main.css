@@ -759,8 +759,9 @@ margin: $sections-padding-top 0;
 /* --- FOOTER ---*/
 .footer {
   background-color: #2F303A;
-  height: 252px;
   margin: auto;
+  max-height: 252px;
+  height: 100%;
   padding: 60px 0 0 0;
 }
 .footer__address {
@@ -847,16 +848,24 @@ margin: $sections-padding-top 0;
 }
 
 .footer-container {
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 /* --- END OF FOOTER ---*/
 .newsletter-form {
   display: -webkit-box;
@@ -868,10 +877,10 @@ margin: $sections-padding-top 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 94px;
 }
 
@@ -895,7 +904,8 @@ margin: $sections-padding-top 0;
   margin-top: 20px;
   padding-top: 15px;
   padding-left: 16px;
-  width: 358px;
+  max-width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3019607843);
   border-radius: 4px;

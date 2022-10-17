@@ -3,8 +3,9 @@
 /* --- FOOTER ---*/
 .footer {
     background-color: $footer-background;
-    height: 252px;
     margin: auto;
+    max-height: 252px;
+    height: 100%;
     padding: 60px 0 0 0;
      
     &__address {
@@ -86,9 +87,15 @@
     color: $button-hover
 }
 .footer-container {
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
     color:  $no-color;
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-container {
+        flex-direction: row;
+    }
 }
 
 /* --- END OF FOOTER ---*/
