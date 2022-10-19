@@ -76,9 +76,83 @@
 }
 
 @media screen and (min-width: 768px) {
+.navigation {
+        padding: 0 auto;
 
+        &__list {
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+            line-height: 1.2;
+            padding: 0;
+            margin-left: 83px;
+            list-style: none;
+        }
+
+        &__pages {
+            display: flex;
+        }
+
+        &__link {
+            font-family: $main-font;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            color: v$main-text-color;
+            text-decoration: none;
+            transition: $transition;
+
+            &:hover,
+            &:focus {
+                color: $button-hover;
+                text-decoration: none;
+                transition: $transition;
+            }
+        }
+
+        &__email,
+        &__tel {
+            font-family: $main-font;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+            color: $light-text-color;
+            text-decoration: none;
+            transition: $transition;
+
+            &:hover,
+            &:focus {
+                color: $button-hover;
+                fill: $button-hover;
+                text-decoration: none;
+            }
+        }
+
+        &__contacts {
+            margin-left: 101px;
+            gap: 10px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__icon {
+            margin-right: 8px;
+            color: $light-text-color;
+            transition: $transition;
+
+            &:hover,
+            &:focus {
+                fill: $button-hover;
+                cursor: pointer;
+            }
+        }
+    }
 
 }
+
 @media screen and (min-width: 1200px) {
 .navigation {
         padding: 0 auto;
