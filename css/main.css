@@ -524,7 +524,7 @@ margin: $sections-padding-top 0;
 
     } */
 .our-clients {
-  padding-top: 94px;
+  padding: 60px 15px;
 }
 .our-clients__title {
   font-family: "Roboto";
@@ -546,12 +546,26 @@ margin: $sections-padding-top 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .our-clients__icon {
+  max-width: 210px;
+  max-height: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 4px;
   border: #AFB1B8 solid 1px;
-  width: 170px;
-  height: 92px;
+  padding: 0 16px;
   fill: #AFB1B8;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1107,7 +1121,6 @@ margin: $sections-padding-top 0;
 .footer {
   background-color: #2F303A;
   margin: auto;
-  max-height: 252px;
   height: 100%;
   padding: 60px 0 0 0;
 }
@@ -1119,6 +1132,22 @@ margin: $sections-padding-top 0;
   margin-top: 20px;
   margin-bottom: 9px;
   width: 246px;
+}
+.footer__top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footer__logo {
   font-family: "Raleway";
@@ -1159,7 +1188,6 @@ margin: $sections-padding-top 0;
           justify-content: center;
   gap: 10px;
   margin-top: 20px;
-  margin-left: 70px;
 }
 .footer__icon {
   fill: #ffffff;
@@ -1182,8 +1210,13 @@ margin: $sections-padding-top 0;
       -ms-flex-direction: column;
           flex-direction: column;
   color: v #ffffff;
-  padding-left: 70px;
-  padding-top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
 }
 .footer__media-title {
   color: v #ffffff;
@@ -1202,15 +1235,125 @@ margin: $sections-padding-top 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #ffffff;
+  gap: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer {
+    background-color: #2F303A;
+    margin: auto;
+    height: 100%;
+    padding: 60px 0 0 0;
+  }
+  .footer__address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 9px;
+    width: 246px;
+  }
+  .footer__logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .footer__contacts, .footer__email, .footer__tel {
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    padding: 0;
+  }
+  .footer__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    gap: 9px;
+    list-style: none;
+  }
+  .footer__icon-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 70px;
+  }
+  .footer__icon {
+    fill: #ffffff;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1019607843);
+  }
+  .footer__icon:hover, .footer__icon:focus {
+    fill: #ffffff;
+    background-color: #2196F3;
+    cursor: pointer;
+  }
+  .footer__media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: v #ffffff;
+    padding-left: 70px;
+    padding-top: 0;
+  }
+  .footer__media-title {
+    color: v #ffffff;
+    margin: 0 auto;
+  }
+  .blue-text {
+    color: #2196F3;
+  }
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #ffffff;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
   }
 }
 /* --- END OF FOOTER ---*/
@@ -1221,14 +1364,15 @@ margin: $sections-padding-top 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   padding-bottom: 94px;
+  margin: auto;
 }
 
 .newsletter {
@@ -1239,7 +1383,15 @@ margin: $sections-padding-top 0;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: auto;
+  width: 100%;
+  gap: 20px;
 }
 .newsletter__label {
   font-size: 14px;
@@ -1311,6 +1463,207 @@ margin: $sections-padding-top 0;
   margin-left: 25px;
 }
 
+@media screen and (min-width: 768px) {
+  .newsletter-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 94px;
+    margin: auto;
+  }
+  .newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: auto;
+    width: 100%;
+    gap: 20px;
+  }
+  .newsletter__label {
+    font-size: 14px;
+    line-height: 1.14;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .newsletter__email {
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-left: 16px;
+    max-width: 358px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3019607843);
+    border-radius: 4px;
+    resize: none;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    background-color: #2F303A;
+  }
+  .signup {
+    margin-left: 12px;
+    margin-top: 46px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
+    padding-bottom: 10px;
+  }
+  .signup__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    border-radius: 4px;
+    border-color: #2196F3;
+    background-color: #2196F3;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1490196078);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1490196078);
+    color: #ffffff;
+    line-height: 1.87;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-style: bold;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+  }
+  .signup__button:hover {
+    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .signup__icon {
+    fill: #ffffff;
+    margin-left: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .newsletter-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 94px;
+  }
+  .newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 90px;
+  }
+  .newsletter__label {
+    font-size: 14px;
+    line-height: 1.14;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .newsletter__email {
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-left: 16px;
+    max-width: 358px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3019607843);
+    border-radius: 4px;
+    resize: none;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    background-color: #2F303A;
+  }
+  .signup {
+    margin-left: 12px;
+    margin-top: 46px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
+    padding-bottom: 10px;
+  }
+  .signup__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    border-radius: 4px;
+    border-color: #2196F3;
+    background-color: #2196F3;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1490196078);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1490196078);
+    color: #ffffff;
+    line-height: 1.87;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-style: bold;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+  }
+  .signup__button:hover {
+    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .signup__icon {
+    fill: #ffffff;
+    margin-left: 25px;
+  }
+}
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
