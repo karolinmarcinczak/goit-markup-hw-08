@@ -141,40 +141,49 @@ img {
     /* calc((100% - numberOfGapsInRow * valueOfOneGap) / numberOfElementInRow) */
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
   .lorem {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin: 0 auto;
     padding: 0 0 60px 0;
     margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .lorem__descriptions {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .lorem__descriptions {
-    width: 1170px;
-    padding: 0%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .lorem__header {
     text-align: left;
   }
   .lorem__text {
     text-align: left;
+  }
+  .lorem__chunk {
+    /* calc((100% - numberOfGapsInRow * valueOfOneGap) / numberOfElementInRow) */
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 .offer {
@@ -356,6 +365,19 @@ img {
   .team__container {
     margin: auto;
   }
+  .team__members {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
   .team__title {
     font-weight: 700;
     font-size: 36px;
@@ -364,8 +386,8 @@ img {
     margin: 0px 0px 50px 0px;
   }
   .team__team-card {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
+    -ms-flex-preferred-size: calc((100% - 30px) / 5);
+        flex-basis: calc((100% - 30px) / 5);
   }
 }
 /* .team-container {

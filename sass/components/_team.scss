@@ -113,6 +113,14 @@
 
         &__container {
             margin: auto;
+            
+        }
+
+        &__members {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 0 auto;
         }
         
         &__title {
@@ -124,7 +132,7 @@
         }
 
         &__team-card {
-            flex-basis: calc((100% - 30px) / 2);
+            flex-basis: calc((100% - 30px) / 5);
         }
 
 
