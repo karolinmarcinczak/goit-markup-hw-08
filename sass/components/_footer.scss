@@ -8,6 +8,7 @@
     margin: auto;
     height: 100%;
     padding: 60px 0 0 0;
+    text-align: center;
      
     &__address {
             font-style: normal;
@@ -113,6 +114,14 @@
             margin: auto;
             height: 100%;
             padding: 60px 0 0 0;
+            display: flex;
+            
+
+            &__tablet {
+                margin-left: auto;
+                display: flex;
+                align-items: baseline;   
+            }
     
             &__address {
                 font-style: normal;
@@ -179,7 +188,7 @@
             &__media {
                 display: flex;
                 flex-direction: column;
-                color: v$no-color;
+                color: $no-color;
                 padding-left: 70px;
                 padding-top: 0;
             }
@@ -207,6 +216,14 @@
          flex-direction: row;
          display: flex;
          margin: 0 auto;
+     }
+
+     .footer {
+        display: flex;
+
+        &__media {
+          padding-bottom: 40px;  
+        }
      }
  }
 
