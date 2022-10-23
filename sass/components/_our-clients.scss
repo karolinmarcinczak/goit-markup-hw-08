@@ -32,7 +32,7 @@
         align-items: center;
         border-radius: 4px;
         border: $social-media solid 1px;
-        padding: 0 16px;
+        padding: 0 15px;
         fill: $social-media;
         transition: $transition;
         &:hover,
@@ -49,6 +49,7 @@
 .our-clients-container {
     width: 100%;
     margin: auto;
+    display: flex;
 }
 
 @media screen and (min-width: 768px) {
