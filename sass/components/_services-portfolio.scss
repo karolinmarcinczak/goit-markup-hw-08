@@ -1,4 +1,4 @@
-@import "../utils/vars";
+  @import "../utils/vars";
 
 .services {
     list-style: none;
@@ -100,7 +100,7 @@
             display: block;
             width: 100%;
             height: 4px;
-            bottom: 0;
+            bottom: -1;
             left: 0;
             background-color: $button-hover;
             transform: translateY(28px);

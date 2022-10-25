@@ -8,6 +8,7 @@
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 60px;
 
     &__descriptions {
         margin: 0px;
@@ -74,6 +75,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 60px;
 
         &__descriptions {
             width: 100%;

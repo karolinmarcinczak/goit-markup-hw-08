@@ -7,7 +7,7 @@
     background-color: $footer-background;
     margin: auto;
     height: 100%;
-    padding: 60px 0 0 0;
+    padding: 60px 0;
     text-align: center;
      
     &__address {
@@ -216,13 +216,20 @@
          flex-direction: row;
          display: flex;
          margin: 0 auto;
+         gap: 0;
      }
 
      .footer {
         display: flex;
+        padding-bottom: 60px;
 
         &__media {
-          padding-bottom: 40px;  
+          padding-bottom: 40px;
+          padding-left: 0; 
+        }
+
+        &__media-title {
+            margin-right: 100px;
         }
      }
  }
